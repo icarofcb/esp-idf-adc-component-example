@@ -10,11 +10,12 @@ This test code shows how to configure ADC and how to get raw readings and calibr
 | GPIO                         | Direction | Configuration                                          |
 | ---------------------------- | --------- | ------------------------------------------------------ |
 | ADC1_CHANNEL2                | input     | ADC unit 1, channel 2                                  |
+| ADC2_CHANNEL2                | input     | ADC unit 2, channel 2                                  |
 | LED_STRIP_BLINK_GPIO         | output    | SPI driver for WS2812                                  |
 
 
 ## Test:
-The example enables ADC unit 1, channel 2, reads the analogic value and outputs raw and the calibrated voltage.
+The example enables `ADC unit 1, channel 2` and `ADC unit 2, channel 2` reads the analogic value and outputs raw and the calibrated voltage. Notice that some ESP32, such as ESP32-C3, don't have ADC2.
 
 ## How to use example
 
